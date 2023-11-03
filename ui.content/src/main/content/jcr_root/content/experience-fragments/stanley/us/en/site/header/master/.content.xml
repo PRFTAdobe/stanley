@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2023-10-17T20:30:08.065Z"
+        cq:lastModifiedBy="admin"
+        cq:tags="[]"
+        cq:template="/conf/stanley/settings/wcm/templates/xf-web-variation"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Header"
+        sling:resourceType="stanley/components/xfpage">
+        <root
+            jcr:lastModified="{Date}2023-10-16T21:18:41.541Z"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="stanley/components/container"
+            addPaddingToContainer="false"
+            backgroundColor="#1abc9c"
+            layout="responsiveGrid">
+            <header
+                jcr:created="{Date}2023-10-16T20:36:25.728Z"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-10-17T20:30:08.062Z"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="stanley/components/header"
+                appicationName="Stanley"
+                collectAllPages="true"
+                disableShadowing="false"
+                homePage="/content/stanley/us/en/home"
+                navigationRoot="/content/stanley/us/en"
+                structureStart="1"/>
+        </root>
+    </jcr:content>
+</jcr:root>

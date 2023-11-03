@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+  <link href="/clientlib-vue/resources/favicon.ico" rel="icon" />
+  <title>Stanley</title>
+
+  <!-- AEM page model -->
+  <meta
+    content="/content/stanley/us/en.model.json"
+    property="cq:pagemodel_root_url"
+  />
+
+  <!-- AEM Base ClientLib -->
+  <link
+    href="/etc.clientlibs/stanley/clientlibs/clientlib-base.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script>
+    window.environment = "development";
+    if (location.pathname === "/") {
+      location.href =
+        "/content/stanley/us/en/home.html";
+    }
+  </script>
+</head>
+
+<body class="basicpage page">
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="spa-root"></div>
+<script
+  async
+  src="/etc.clientlibs/stanley/clientlibs/clientlib-base.js"
+></script>
+</body>
+</html>

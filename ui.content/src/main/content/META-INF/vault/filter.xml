@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/stanley" mode="merge"/>
+    <filter root="/content/stanley" mode="merge"/>
+    <filter root="/content/dam/stanley" mode="merge">
+        <exclude pattern="/content/dam/stanley(/.*)?"/>
+        <include pattern="/content/dam/stanley/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/stanley/asset.jpg" mode="merge"/>
+    <filter root="/content/dam/stanley/user.cc753810.png" mode="merge"/>
+    <filter root="/content/dam/stanley/ape.jpg" mode="merge"/>
+    <filter root="/content/dam/stanley/chiefs.jpg" mode="merge"/>
+    <filter root="/content/dam/stanley/emperors.jpg" mode="merge"/>
+    <filter root="/content/dam/stanley/force.jpg" mode="merge"/>
+    <filter root="/content/dam/stanley/raiders-full.jpg" mode="merge"/>
+    <filter root="/content/dam/stanley/raiders.jpg" mode="merge"/>
+    <filter root="/content/dam/stanley/rebels-full.jpg" mode="merge"/>
+    <filter root="/content/dam/stanley/vikings.jpg" mode="merge"/>
+    <filter root="/content/dam/stanley/wampas-full.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/stanley" mode="merge"/>
+</workspaceFilter>

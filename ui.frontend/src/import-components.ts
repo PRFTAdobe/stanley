@@ -7,14 +7,21 @@ import {
 } from 'aem-vue-3-editable-components';
 import {
   BreadcrumbEditConfig,
+  ButtonEditConfig,
   CoreBreadcrumb,
+  CoreDownload,
+  CoreEmbed,
   CoreLanguageNavigation,
+  CoreList,
   CoreNavigation,
   CoreSeparator,
   CoreTeaser,
   CoreText,
+  DownloadEditConfig,
+  EmbedEditConfig,
   ImageEditConfig,
   LanguageNavigationEditConfig,
+  ListEditConfig,
   NavigationEditConfig,
   TeaserEditConfig,
   TextEditConfig,
@@ -22,10 +29,14 @@ import {
 } from 'aem-vue-3-core-wcm-components-base';
 import {
   AccordionEditConfig,
+  CarouselEditConfig,
   ContainerEditConfig,
   CoreAccordion,
+  CoreCarousel,
   CoreExperienceFragment,
+  CoreTabs,
   ExperienceFragmentEditConfig,
+  TabsEditConfig,
 } from 'aem-vue-3-core-wcm-components-spa';
 import CompositeRoute from '@/components/CompositeRoute.vue';
 import StanleyContainer from '@/components/StanleyContainer.vue';
@@ -33,6 +44,7 @@ import StanleyHeader from '@/components/StanleyHeader.vue';
 import StanleyImage from '@/components/StanleyImage.vue';
 import StanleyTitle from '@/components/StanleyTitle.vue';
 import StanleyContactForm from '@/components/StanleyContactForm.vue';
+import StanleyButton from '@/components/StanleyButton.vue';
 
 interface ResponsiveGridComponentProperties extends MappedComponentProperties {
   cqItems: object;
@@ -57,6 +69,8 @@ MapTo('stanley/components/languagenavigation')(
   LanguageNavigationEditConfig,
 );
 MapTo('stanley/components/accordion')(CoreAccordion, AccordionEditConfig);
+MapTo('stanley/components/button')(StanleyButton, ButtonEditConfig);
+MapTo('stanley/components/carousel')(CoreCarousel, CarouselEditConfig);
 MapTo('stanley/components/container')(StanleyContainer, ContainerEditConfig);
 MapTo('stanley/components/text')(CoreText, TextEditConfig);
 MapTo('wcm/foundation/components/responsivegrid')(
@@ -70,3 +84,7 @@ MapTo('stanley/components/experiencefragment')(
 );
 MapTo('stanley/components/header')(StanleyHeader);
 MapTo('stanley/components/contact-form')(StanleyContactForm);
+MapTo('stanley/components/download')(CoreDownload, DownloadEditConfig);
+MapTo('stanley/components/embed')(CoreEmbed, EmbedEditConfig);
+MapTo('stanley/components/list')(CoreList, ListEditConfig);
+MapTo('stanley/components/tabs')(CoreTabs, TabsEditConfig);

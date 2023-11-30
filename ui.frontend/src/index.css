@@ -12,7 +12,7 @@
   --color-rusty-red: #dc3545;
   --color-white: #fff;
   --stanley-heading-color: var(--color-dark-charcoal);
-  --stanley-link-color: inherit;
+  --stanley-link-color: var(--color-light-sea-green);
   --stanley-link-active-color: var(--color-raisin-black);
   --stanley-link-hover-color: inherit;
   --stanley-size-0x: 0;
@@ -130,6 +130,11 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-size: 20px;
+  margin-block: var(--stanley-size-1x);
+}
+
 h4 {
   font-size: 18px;
   margin-block: var(--stanley-size-1x);
@@ -145,7 +150,7 @@ h4 {
   color: var(--stanley-link-hover-color);
 }
 
-.cmp-link--active {
+.cmp-link--active:not(.stanley-button) {
   color: var(--stanley-link-active-color);
 }
 

@@ -17,5 +17,6 @@
     <filter root="/content/dam/stanley/rebels-full.jpg" mode="merge"/>
     <filter root="/content/dam/stanley/vikings.jpg" mode="merge"/>
     <filter root="/content/dam/stanley/wampas-full.jpg" mode="merge"/>
+    <filter root="/content/dam/stanley/lava-into-ocean.jpg" mode="merge" />
     <filter root="/content/experience-fragments/stanley" mode="merge"/>
 </workspaceFilter>

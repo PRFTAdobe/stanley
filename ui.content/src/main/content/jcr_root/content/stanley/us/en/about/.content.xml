@@ -2,9 +2,10 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2023-10-26T19:13:09.429Z"
+        cq:lastModified="{Date}2023-11-24T21:08:25.003Z"
         cq:lastModifiedBy="admin"
         cq:template="/conf/stanley/settings/wcm/templates/spa-page-template"
+        jcr:description="All About Stanley"
         jcr:primaryType="cq:PageContent"
         jcr:title="About"
         sling:resourceType="stanley/components/page">
@@ -262,5 +263,10 @@
                 </container_1610220667>
             </responsivegrid>
         </root>
+        <image
+            jcr:lastModified="{Date}2023-11-24T21:08:24.996Z"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0"/>
     </jcr:content>
 </jcr:root>

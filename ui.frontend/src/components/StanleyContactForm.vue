@@ -7,6 +7,7 @@
   import { AuthoringUtils } from '@adobe/aem-spa-page-model-manager';
   import { ErrorMessage, Field, Form } from 'vee-validate';
   import * as yup from 'yup';
+  import StanleyButton from '@/components/StanleyButton.vue';
 
   const props = defineProps({
     commentsPlaceholder: {
@@ -100,7 +101,7 @@
         name="comments"
         rows="10"
       />
-      <button class="stanley-form__button">{{ props.submitButtonText }}</button>
+      <StanleyButton :text="props.submitButtonText" type="submit" />
     </Form>
   </div>
 </template>
@@ -144,28 +145,5 @@
     color: var(--color-rusty-red);
     font-size: 80%;
     margin-block-start: var(--stanley-size-half);
-  }
-
-  .stanley-form__button {
-    background-color: var(--color-light-sea-green);
-    border: 1px solid rgb(0 0 0 / 0%);
-    border-radius: 4px;
-    color: var(--color-white);
-    cursor: pointer;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: normal;
-    margin-block-end: 0;
-    padding-block: var(--stanley-size-1x) var(--stanley-size-1x);
-    padding-inline: calc(var(--stanley-size-1x) + var(--stanley-size-half))
-      calc(var(--stanley-size-1x) + var(--stanley-size-half));
-    text-align: center;
-    user-select: none;
-    vertical-align: middle;
-    white-space: nowrap;
-  }
-
-  .stanley-form__button:hover {
-    background-color: var(--color-green-crayola);
   }
 </style>

@@ -382,7 +382,7 @@
                 </policy_1574694950110>
                 <policy_1574695586800
                     jcr:description="Allows the page components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
-                    jcr:lastModified="{Date}2023-10-24T21:23:37.377Z"
+                    jcr:lastModified="{Date}2023-11-03T19:26:13.238Z"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Content"
@@ -390,7 +390,7 @@
                     allowedColorSwatches="[,#1abc9c,#f2f2f2,#2f2f2f]"
                     backgroundColorEnabled="true"
                     backgroundColorSwatchesOnly="true"
-                    components="[group:Stanley - Content,/apps/stanley/components/form/container]"
+                    components="[group:Stanley - Content,/apps/stanley/components/contact-form,/apps/stanley/components/languagenavigation,/apps/stanley/components/navigation]"
                     layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
@@ -475,6 +475,17 @@
                     titleType="h3">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_1575031387650>
+                <policy_1402009981127
+                    jcr:lastModified="{Date}2023-11-30T15:37:43.673Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Content Teaser"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    allowedHeadingElements="[h1,h2,h3,h4,h5,h6]"
+                    showTitleType="false"
+                    titleType="h3">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1402009981127>
             </teaser>
             <download jcr:primaryType="nt:unstructured">
                 <policy_1575032193319
@@ -517,6 +528,30 @@
                     isRoot="{Boolean}true"
                     structureDepth="99"/>
             </spa>
+            <embed jcr:primaryType="nt:unstructured">
+                <policy_1699903724859
+                    jcr:lastModified="{Date}2023-11-13T19:29:15.608Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Content Embed"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    allowedEmbeddables="core/wcm/components/embed/v1/embed/embeddable/youtube"
+                    embeddablesDisabled="false"
+                    htmlDisabled="false"
+                    urlDisabled="false"
+                    youtubeAutoPlayDefaultValue="true"
+                    youtubeAutoPlayEnabled="true"
+                    youtubeLoopDefaultValue="true"
+                    youtubeLoopEnabled="true"
+                    youtubeMuteDefaultValue="true"
+                    youtubeMuteEnabled="true"
+                    youtubePlaysInlineDefaultValue="true"
+                    youtubePlaysInlineEnabled="true"
+                    youtubeRelatedVideosDefaultValue="true"
+                    youtubeRelatedVideosEnabled="true">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1699903724859>
+            </embed>
         </components>
     </stanley>
     <wcm jcr:primaryType="nt:unstructured">
@@ -526,10 +561,12 @@
                     <spa-default
                         cq:styleDefaultElement="main"
                         jcr:description="Includes only SPA-Enabled components."
+                        jcr:lastModified="{Date}2023-11-03T19:25:59.274Z"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="SPA Content"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[group:Stanley - Content]">
+                        components="[group:Stanley - Content,/apps/stanley/components/contact-form,/apps/stanley/components/languagenavigation,/apps/stanley/components/navigation]">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </spa-default>
                 </responsivegrid>

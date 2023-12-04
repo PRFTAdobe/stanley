@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2023-11-24T21:08:25.003Z"
+        cq:lastModified="{Date}2023-12-04T21:02:18.040Z"
         cq:lastModifiedBy="admin"
         cq:template="/conf/stanley/settings/wcm/templates/spa-page-template"
         jcr:description="All About Stanley"
@@ -31,15 +31,18 @@
                     backgroundColor="#f2f2f2"
                     blockPadding="9x"
                     layout="responsiveGrid">
-                    <text
-                        jcr:created="{Date}2023-10-24T21:24:50.181Z"
+                    <contentfragment
+                        jcr:created="{Date}2023-12-04T21:01:59.467Z"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2023-10-26T18:50:38.726Z"
+                        jcr:lastModified="{Date}2023-12-04T21:02:11.612Z"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="stanley/components/text"
-                        text="&lt;p style=&quot;text-align: center;&quot;>&lt;img src=&quot;/content/dam/stanley/user.cc753810.png&quot; alt=&quot;Stanley&quot; style=&quot;float: inherit;&quot;>&lt;br>&#xd;&#xa;&lt;/p>&#xd;&#xa;&lt;h1 style=&quot;text-align: center;&quot;>About Stanley!&lt;/h1>&#xd;&#xa;&lt;p style=&quot;text-align: center;&quot;>Hello everybody. I’m Stanley, a handsome Vue application created by Shannon Sumner.&lt;br>&#xd;&#xa;Stanley is a really simple application to showcase my skills in a cute &amp;amp; clean way.&lt;/p>&#xd;&#xa;&lt;p style=&quot;text-align: center;&quot;>&amp;quot;No one is perfect - that’s why pencils have erasers.&amp;quot;&lt;br>&#xd;&#xa;&lt;b>Wolfgang Riebe&lt;br>&#xd;&#xa; Keynote Speaker/Magician&lt;/b>&lt;/p>&#xd;&#xa;"
-                        textIsRich="true">
+                        sling:resourceType="stanley/components/contentfragment"
+                        displayMode="multi"
+                        fragmentPath="/content/dam/stanley/about-stanley"
+                        paragraphScope="all"
+                        text="About Stanley Image /content/dam/stanley/user.cc753810.png Heading About Stanley! Copy Hello everybody. I’m Stanley, a handsome Vue application created by Shannon Sumner. Stanley is a really simple application to showcase my skills in a cute &amp; clean way. Quote &quot;No one is perfect - that’s why pencils have erasers.&quot; Wolfgang Riebe Keynote Speaker/Magician"
+                        variationName="master">
                         <cq:responsive jcr:primaryType="nt:unstructured">
                             <default
                                 jcr:primaryType="nt:unstructured"
@@ -58,7 +61,7 @@
                                 offset="0"
                                 width="12"/>
                         </cq:responsive>
-                    </text>
+                    </contentfragment>
                 </container>
                 <container_1610220667
                     jcr:created="{Date}2023-10-26T19:11:11.804Z"

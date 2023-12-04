@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2023-11-30T17:42:42.195Z"
+        cq:lastModified="{Date}2023-12-04T20:15:13.049Z"
         cq:lastModifiedBy="admin"
         cq:template="/conf/stanley/settings/wcm/templates/spa-page-template"
         jcr:description="Sample Stanley Vue Components"
@@ -512,6 +512,76 @@
                                 titleValueFromDAM="false"/>
                         </carousel>
                     </container_copy_32473_478927979>
+                    <container_copy_32473_190535393
+                        jcr:created="{Date}2023-11-03T19:23:41.661Z"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2023-11-03T19:28:10.927Z"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="stanley/components/container"
+                        addGapBetweenComponents="true"
+                        blockPadding="2x"
+                        layout="responsiveGrid">
+                        <text
+                            jcr:created="{Date}2023-11-03T19:16:28.450Z"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2023-12-04T20:14:39.550Z"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="stanley/components/text"
+                            text="&lt;h3>&lt;b>Content Fragment&lt;/b>&lt;/h3>&#xd;&#xa;"
+                            textIsRich="true">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="12"/>
+                            </cq:responsive>
+                        </text>
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="2"
+                                width="8"/>
+                            <tablet
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="12"/>
+                            <phone
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="12"/>
+                            <smallScreen
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="12"/>
+                        </cq:responsive>
+                        <contentfragment
+                            jcr:created="{Date}2023-12-04T20:14:46.594Z"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2023-12-04T20:15:13.037Z"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="stanley/components/contentfragment"
+                            displayMode="multi"
+                            fragmentPath="/content/dam/stanley/about-stanley"
+                            paragraphScope="all"
+                            text="About Stanley Heading About Stanley! Copy Hello everybody. I’m Stanley, a handsome Vue application created by Shannon Sumner. Stanley is a really simple application to showcase my skills in a cute &amp; clean way. Quote &quot;No one is perfect - that’s why pencils have erasers.&quot; Wolfgang Riebe Keynote Speaker/Magician"
+                            variationName="master">
+                            <par0
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="dam/cfm/components/grid">
+                                <user.cc753810-1701465553662
+                                    jcr:lastModified="{Date}2023-12-04T20:15:13.119Z"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="dam/cfm/components/mmimage"
+                                    cfmAssetRef="user.cc753810-1701465553662"
+                                    cfmAssetType="image"
+                                    cfmParagraph="{Long}0"
+                                    fileReference="/content/dam/stanley/user.cc753810.png"/>
+                            </par0>
+                        </contentfragment>
+                    </container_copy_32473_190535393>
                     <container_copy_32473
                         jcr:created="{Date}2023-11-03T19:23:41.661Z"
                         jcr:createdBy="admin"
@@ -624,6 +694,16 @@
                             sling:resourceType="stanley/components/embed"
                             type="url"
                             url="https://www.pinterest.com/pin/146859637829777606/"/>
+                        <embed_copy
+                            jcr:created="{Date}2023-11-13T21:28:49.345Z"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2023-11-30T21:26:04.212Z"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="stanley/components/embed"
+                            html="bob"
+                            type="url"
+                            url="https://twitter.com/GabrielWalt/status/1159514156074196992"/>
                     </container_copy_32473_2017537808>
                     <container_copy_32473_1577844533
                         jcr:created="{Date}2023-11-03T19:23:41.661Z"
@@ -865,6 +945,38 @@
                             sling:resourceType="stanley/components/list"
                             childDepth="1"
                             displayItemAsTeaser="false"
+                            linkItems="true"
+                            listFrom="children"
+                            parentPage="/content/stanley/us/en"
+                            showDescription="true"
+                            showModificationDate="true"
+                            sortOrder="asc"
+                            tagsMatch="any"/>
+                        <text_copy
+                            jcr:created="{Date}2023-11-03T19:16:28.450Z"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2023-11-30T21:21:48.877Z"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="stanley/components/text"
+                            text="&lt;h3>&lt;b>List as Teasers&lt;/b>&lt;/h3>&#xd;&#xa;"
+                            textIsRich="true">
+                            <cq:responsive jcr:primaryType="nt:unstructured">
+                                <default
+                                    jcr:primaryType="nt:unstructured"
+                                    offset="0"
+                                    width="12"/>
+                            </cq:responsive>
+                        </text_copy>
+                        <list_copy
+                            jcr:created="{Date}2023-11-24T17:30:53.311Z"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2023-11-30T21:21:58.220Z"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="stanley/components/list"
+                            childDepth="1"
+                            displayItemAsTeaser="true"
                             linkItems="true"
                             listFrom="children"
                             parentPage="/content/stanley/us/en"

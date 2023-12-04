@@ -31,11 +31,14 @@ import {
   AccordionEditConfig,
   CarouselEditConfig,
   ContainerEditConfig,
+  ContentFragmentEditConfig,
   CoreAccordion,
   CoreCarousel,
+  CoreContentFragment,
   CoreExperienceFragment,
   CoreTabs,
   ExperienceFragmentEditConfig,
+  MapToContentFragmentModel,
   TabsEditConfig,
 } from 'aem-vue-3-core-wcm-components-spa';
 import CompositeRoute from '@/components/CompositeRoute.vue';
@@ -45,6 +48,8 @@ import StanleyImage from '@/components/StanleyImage.vue';
 import StanleyTitle from '@/components/StanleyTitle.vue';
 import StanleyContactForm from '@/components/StanleyContactForm.vue';
 import StanleyButton from '@/components/StanleyButton.vue';
+import StanleyContentFragment from '@/components/StanleyContentFragment.vue';
+import { Component } from 'vue';
 
 interface ResponsiveGridComponentProperties extends MappedComponentProperties {
   cqItems: object;
@@ -88,3 +93,11 @@ MapTo('stanley/components/download')(CoreDownload, DownloadEditConfig);
 MapTo('stanley/components/embed')(CoreEmbed, EmbedEditConfig);
 MapTo('stanley/components/list')(CoreList, ListEditConfig);
 MapTo('stanley/components/tabs')(CoreTabs, TabsEditConfig);
+MapTo('stanley/components/contentfragment')(
+  CoreContentFragment,
+  ContentFragmentEditConfig,
+);
+
+MapToContentFragmentModel('stanley/models/about')(
+  StanleyContentFragment as Component,
+);

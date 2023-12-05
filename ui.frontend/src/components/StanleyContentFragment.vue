@@ -81,20 +81,27 @@
 
 <template>
   <div :id="props.id" :class="className">
-    <div :class="`${props.baseCssClass}__image`">
-      <img :src="props.elements['image'].value" alt="Stanley" />
-    </div>
-    <h1 :class="`${props.baseCssClass}__heading`">
-      {{ props.elements['heading'].value }}
-    </h1>
-    <div
-      :class="`${props.baseCssClass}__copy`"
-      v-html="props.elements['copy'].value"
-    />
-    <div
-      :class="`${props.baseCssClass}__quote`"
-      v-html="props.elements['quote'].value"
-    />
+    <template v-for="element in props.elementsOrder" :key="element">
+      <div v-if="element === 'image'" :class="`${props.baseCssClass}__image`">
+        <img :src="props.elements['image'].value" alt="Stanley" />
+      </div>
+      <h1
+        v-else-if="element === 'heading'"
+        :class="`${props.baseCssClass}__heading`"
+      >
+        {{ props.elements['heading'].value }}
+      </h1>
+      <div
+        v-else-if="element === 'copy'"
+        :class="`${props.baseCssClass}__copy`"
+        v-html="props.elements['copy'].value"
+      />
+      <div
+        v-else-if="element === 'quote'"
+        :class="`${props.baseCssClass}__quote`"
+        v-html="props.elements['quote'].value"
+      />
+    </template>
   </div>
 </template>
 

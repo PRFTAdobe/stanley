@@ -4,17 +4,18 @@
     "stylelint-config-recommended-vue"
   ],
   "plugins": [
-    "stylelint-logical-properties",
+    "stylelint-use-logical",
     "stylelint-order"
   ],
   "rules": {
-    "selector-class-pattern": null,
+    "csstools/use-logical": "always",
+    "media-feature-range-notation": null,
     "order/order": [
       "custom-properties",
       "declarations"
     ],
     "order/properties-alphabetical-order": true,
-    "stylelint-logical-properties/enforce-logical-properties": "always"
+    "selector-class-pattern": null
   },
   "overrides": [
     {

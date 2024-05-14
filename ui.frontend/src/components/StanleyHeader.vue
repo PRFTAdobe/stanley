@@ -145,7 +145,7 @@
     text-transform: uppercase;
   }
 
-  @media (width >= 768px) {
+  @media (max-width: 768px) {
     .stanley-header {
       align-items: center;
       flex-flow: row nowrap;
@@ -187,7 +187,7 @@
     background-color: #333;
   }
 
-  @media (width >= 768px) {
+  @media (max-width: 768px) {
     .stanley-header__menu-toggle {
       display: none;
     }
@@ -205,7 +205,7 @@
     inline-size: 100%;
   }
 
-  @media (width >= 768px) {
+  @media (max-width: 768px) {
     .stanley-navigation {
       inline-size: auto;
     }
@@ -247,7 +247,7 @@
     position: absolute;
   }
 
-  @media (width >= 768px) {
+  @media (max-width: 768px) {
     .stanley-navigation__group {
       block-size: auto;
       overflow: visible;
@@ -258,7 +258,7 @@
     }
   }
 
-  @media (width >= 768px) {
+  @media (max-width: 768px) {
     .stanley-navigation__group {
       border: 0;
       flex-flow: row nowrap;

@@ -161,19 +161,19 @@ h4 {
   padding-inline: var(--stanley-size-3x) var(--stanley-size-3x);
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .aem-page {
     inline-size: 750px;
   }
 }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   .aem-page {
     inline-size: 970px;
   }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   .aem-page {
     inline-size: 1170px;
   }

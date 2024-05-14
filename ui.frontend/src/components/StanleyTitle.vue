@@ -21,7 +21,7 @@
     text-align: center;
   }
 
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     .stanley-title {
       inline-size: 50%;
       margin-inline: auto;
